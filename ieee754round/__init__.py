@@ -1,7 +1,7 @@
 
 '''
->>> import struct
->>> hexd = lambda _: print(f"{struct.unpack('Q', struct.pack('d', _))[0]:016x}")
+>>> from struct import pack, unpack
+>>> hexd = lambda _: print(f"{unpack('Q', pack('d', _))[0]:016x}")
 
 >>> hexd(rcp_rn(3))
 3fd5555555555555
