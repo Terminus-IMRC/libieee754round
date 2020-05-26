@@ -10,8 +10,8 @@ rounding.
 C and C++ have a function `fesetround` in `fenv.h` to set floating-point
 rounding mode, but a modification through this interface may be disregarded
 depending on compilers' optimization flags.  This behavior can be prevented with
-`#pragma STDC FENV_ACCESS ON` in C++, but it seems that no compiler supports
-this sentence.
+`#pragma STDC FENV_ACCESS ON` in C++, but it seems that no compiler currently
+supports this sentence.
 
 In contrast, almost all compilers have `_MM_SET_ROUNDING_MODE` in `immintrin.h`
 which does the same as `fesetround` but does not seem to be optimized away.
