@@ -36,5 +36,6 @@ $ pip3 install --user git+https://github.com/Terminus-IMRC/libieee754round.git
 ```
 $ git clone https://github.com/Terminus-IMRC/libieee754round.git
 $ cd libieee754round/
+$ python3 setup.py build_ext --inplace
 $ python3 -m doctest -v ieee754round/__init__.py
 ```
